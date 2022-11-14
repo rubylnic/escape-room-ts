@@ -1,0 +1,143 @@
+.quest {
+  width: 31%;
+  height: 232px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2%;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 0;
+
+  &--hit::before {
+    content: "";
+    width: 68px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    right: 17px;
+    background: url("../../img/badge.svg") 0 0 no-repeat;
+  }
+
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+}
+
+.quest__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.quest img {
+  order: 0;
+}
+
+.quest a {
+  margin: 0;
+  text-decoration: none;
+  color: $white;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.quest h4 {
+  font-weight: 700;
+  max-width: 240px;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+
+.quest p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 9px;
+  margin-left: 22px;
+  width: auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 14px;
+    left: -19px;
+    top: 0;
+    background: url("../../img/location-s.svg") no-repeat 0 0;
+  }
+}
+
+.quest__people {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 25px;
+  margin-right: 34px;
+  font-size: 13px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 16px;
+    right: 53px;
+    top: 0;
+    background: url("../../img/person-s.svg") no-repeat 0 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 20px;
+    right: -13px;
+    top: -4px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.quest__difficulty {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+  width: 81px;
+  font-size: 13px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: -21px;
+    top: 0;
+    background: url("../../img/puzzle-s.svg") no-repeat 0 0;
+  }
+}
+
+@include media-mobile {
+  .quest {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 13px;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.main-nav {
+  min-width: 73.5%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav__list {
+  @include list;
+  max-width: 810px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  margin-left: 40px;
+
+  &--contacts {
+    .main-nav__item {
+      margin-right: 23px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 46px;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  color: $white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16.4px;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $yellow;
+  }
+
+  &--location {
+    position: relative;
+    color: $yellow;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1px $yellow dashed;
+      padding-bottom: 5px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 21px;
+      background: url("../../img/location.svg") no-repeat 0 0;
+      left: -26px;
+      top: -5px;
+    }
+  }
+}
+
+@include media-mobile-tablet {
+  .main-nav {
+    text-align: center;
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &:first-of-type {
+      margin: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.16);
+    }
+
+    &--contacts {
+      order: 0;
+      padding-bottom: 40px;
+
+      .main-nav__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .main-nav__link {
+        font-size: 14px;
+
+        &--location {
+          font-size: 12px;
+          margin-left: 24px;
+        }
+      }
+    }
+
+    &--menu {
+      order: 1;
+
+      .main-nav__item {
+        margin-bottom: 41px;
+      }
+    }
+  }
+
+  .main-nav__item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-nav__link {
+    font-size: 16px;
+  }
+}

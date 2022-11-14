@@ -1,0 +1,187 @@
+.quests__container {
+  width: 86%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 43px 20px 0 38px;
+}
+
+.quests__heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20.16px;
+  color: $yellow;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.quests__heading-choose {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70.4px;
+  color: $white;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.quests__list-limiter {
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 521px;
+}
+
+.quests__list {
+  @include list;
+  @include flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 39px;
+  overflow: initial;
+  gap: 15px;
+}
+
+.quests__item {
+  position: relative;
+  border-right: 2px solid rgba(255, 255, 255, 0.32);
+  padding: 0 3.6%;
+  cursor: pointer;
+
+  @media (max-width: 1155px) {
+    padding: 0 1.8%;
+  }
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    border: none;
+    padding-right: 0;
+  }
+}
+
+.quests__link {
+  text-decoration: none;
+  color: $white;
+  height: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.quests__link--active .quests__link-text {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $yellow;
+    bottom: -4px;
+  }
+}
+
+.quests__icon-img {
+  width: 33px;
+  margin-right: 12px;
+
+  &--big {
+    width: 40px;
+  }
+}
+
+.quests__list-container {
+  @include list;
+  @include flex;
+}
+
+@include media-tablet {
+  .quests__container {
+    width: 100%;
+    max-width: 770px;
+    overflow: visible;
+    margin: 0 auto;
+    padding: 32px 16px 0 16px;
+  }
+
+  .quests__list {
+    width: auto;
+  }
+
+  .quests__item {
+    padding-right: 15px;
+    width: auto;
+  }
+
+  .quests__heading-choose {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .quests__list-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@include media-mobile-tablet {
+  .quests__list-limiter {
+    overflow: initial;
+    height: auto;
+  }
+}
+
+@include media-mobile {
+  .quests__container {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 32px 16px 0 16px;
+  }
+
+  .quests__limiter {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 95%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .quests__list {
+    width: 768px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .quests__item {
+    padding-right: 15px;
+    width: auto;
+    height: 40px;
+  }
+
+  .quests__heading-choose {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 37px;
+  }
+
+  .quests__icon-img {
+    width: 27px;
+  }
+
+  .quests__list-container {
+    margin: 0 auto;
+    width: 328px;
+  }
+}

@@ -1,0 +1,370 @@
+.choose__container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1090px;
+  padding: 57px 0 0 0;
+
+}
+
+.choose__genre {
+  span {
+    display: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $yellow;
+    margin-left: 5px;
+    text-transform: lowercase;
+    margin-bottom: 9px;
+  }
+
+  p {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $yellow;
+    margin: 0;
+    margin-left: 5px;
+    text-transform: lowercase;
+    margin-bottom: 9px;
+  }
+}
+
+.choose h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 92px;
+  letter-spacing: -0.03em;
+  line-height: 87.4px;
+  color: $white;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 31px;
+  position: relative;
+}
+
+.choose__link-container {
+  width: 267px;
+  position: relative;
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+  margin-left: 45px;
+}
+
+.choose__link-container {
+  .my-calendar {
+    position: absolute;
+    bottom: -285px;
+    z-index: 1;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+}
+
+.choose__date-button {
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+  padding-bottom: 5px;
+  padding-right: 11px;
+  border-bottom: solid 2px $yellow;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 7px;
+    background: url("../../img/arrow-right.svg");
+    top: 8px;
+    right: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: dotted 2px $yellow;
+  }
+}
+
+.choose__link-date a {
+  position: initial;
+  color: $white;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 40.3px;
+  text-decoration: none;
+  padding: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.choose__description-list {
+  width: 325px;
+
+  @include flex;
+  @include list;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  margin-left: 45px;
+}
+
+.choose__description-item {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose__description-square {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 5px;
+
+  &--transparent {
+    border: solid 1px $white;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &--orange {
+    background-image: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
+    background-color: $yellow;
+  }
+
+  &--green {
+    background-image: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
+    background-color: #2cdb52;
+  }
+}
+
+.choose__description-text {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  color: $white;
+  line-height: 17.2px;
+}
+
+.choose__list {
+  @include list;
+  @include flex;
+  margin-left: 45px;
+  justify-content: space-around;
+  max-width: 852px;
+}
+
+.choose__list li {
+  width: 110px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+.choose__item {
+  color: $white;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 0 6px 0;
+  border: solid 2px #c4c4c4;
+  border-radius: 65px;
+  margin-bottom: 4px;
+  cursor: url("../../img/cursor.png"), url("../../img/cursor.cur"), pointer;
+}
+
+.choose__item--chosen {
+  background-image: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
+  background-color: #2cdb52;
+  border: none;
+  padding: 7px 0 8px 0;
+}
+
+.choose__item--taken {
+  background-image: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
+  background-color: $yellow;
+  border: none;
+  padding: 7px 0 8px 0;
+}
+
+.choose__item span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.2px;
+  color: $white;
+  margin-left: -2px;
+}
+
+.choose__info {
+  position: absolute;
+  top: 178px;
+  left: 44%;
+  display: flex;
+  justify-content: space-between;
+  width: 29.5%;
+  align-items: flex-end;
+
+  @media (max-width: 1300px) {
+    left: 55%;
+    width: 34%;
+  }
+}
+
+.choose__info-text {
+  font-size: 15px;
+  color: $white;
+  line-height: 22.5px;
+  font-weight: 500;
+  width: 164px;
+  margin-right: 15px;
+
+  span {
+    width: 100%;
+    display: block;
+    letter-spacing: 0.01em;
+  }
+}
+
+.choose__info-pay {
+  font-size: 15px;
+  color: $white;
+  line-height: 22.5px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  padding-right: 11px;
+  border-bottom: solid 2px $yellow;
+  margin-bottom: 5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 7px;
+    background: url("../../img/arrow-right.svg");
+    top: 8px;
+    right: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: dotted 2px $yellow;
+  }
+}
+
+@media (max-width: 1123px) {
+  .choose__list {
+    max-width: 667px;
+  }
+}
+
+@include media-mobile-tablet {
+  .choose__container {
+    padding: 0px 17px 93px 17px;
+    width: 100%;
+  }
+
+  .choose__genre {
+    margin-left: 0;
+
+    span {
+      display: block;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .choose h2 {
+    font-size: 42px;
+    line-height: 46.2px;
+    letter-spacing: 0.001em;
+    margin-bottom: 27px;
+  }
+
+  .choose__link-container {
+    margin: 0;
+    margin-bottom: 23px;
+    width: 258px;
+  }
+
+  .choose__description-list {
+    margin: 0;
+    width: 100%;
+    max-width: 325px;
+    margin-bottom: 48px;
+  }
+
+  .choose__list {
+    margin: 0;
+    width: 83%;
+    max-width: 667px;
+    margin-bottom: 8px;
+  }
+
+  .choose__list li {
+    margin-right: 24px;
+  }
+
+  .choose__info {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 260px;
+    display: block;
+    margin-right: 0;
+  }
+
+  .choose__info-text {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .choose__info-text span {
+    width: auto;
+    display: initial;
+  }
+
+  .choose__info-date {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .choose__container {
+    max-width: 770px;
+  }
+}
