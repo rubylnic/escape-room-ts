@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/escape/static/css/main.2c597467.css",
-    "main.js": "/escape/static/js/main.faf5ff6f.js",
+    "main.js": "/escape/static/js/main.28bb666e.js",
     "static/media/bg-d@2x.jpg": "/escape/static/media/bg-d@2x.1df0a927f1e733700880.jpg",
     "static/media/ritual@2x.jpg": "/escape/static/media/ritual@2x.570dd5cabc6bc2783a1a.jpg",
     "static/media/bg-d@1x.jpg": "/escape/static/media/bg-d@1x.d29b83e3a10bcd2d3cde.jpg",
@@ -43,12 +43,12 @@
     "static/media/vk-gray.svg": "/escape/static/media/vk-gray.7fbc2465d4ab9c281722.svg",
     "static/media/puzzle-s.svg": "/escape/static/media/puzzle-s.750fdfa589a80541d782.svg",
     "static/media/vk.svg": "/escape/static/media/vk.6a37a531b22e4e8bbfc0.svg",
-    "index.html": "/escape/index.html",
     "static/media/location-s.svg": "/escape/static/media/location-s.5dafe34ed33edf9a570c.svg",
     "static/media/location.svg": "/escape/static/media/location.bcba62e87df9d6c1bf5a.svg",
     "static/media/person.svg": "/escape/static/media/person.c3857c5e9c864ee017f6.svg",
     "static/media/person-s.svg": "/escape/static/media/person-s.3fdb8feb76a47e35f0b5.svg",
     "static/media/badge.svg": "/escape/static/media/badge.c8b17379c81918dff2b9.svg",
+    "index.html": "/escape/index.html",
     "static/media/gps.svg": "/escape/static/media/gps.61cb33b2853c8182cda3.svg",
     "static/media/clock.svg": "/escape/static/media/clock.667ed26b1fc3cb9d71f3.svg",
     "static/media/tick.svg": "/escape/static/media/tick.ee2f13fc35354aa24c68.svg",
@@ -57,10 +57,10 @@
     "static/media/arrow-right.svg": "/escape/static/media/arrow-right.987c5129345bd46b779a.svg",
     "static/media/arrow-left.svg": "/escape/static/media/arrow-left.842e2d9fc7cbf2c942b4.svg",
     "main.2c597467.css.map": "/escape/static/css/main.2c597467.css.map",
-    "main.faf5ff6f.js.map": "/escape/static/js/main.faf5ff6f.js.map"
+    "main.28bb666e.js.map": "/escape/static/js/main.28bb666e.js.map"
   },
   "entrypoints": [
     "static/css/main.2c597467.css",
-    "static/js/main.faf5ff6f.js"
+    "static/js/main.28bb666e.js"
   ]
 }
