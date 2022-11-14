@@ -44,11 +44,11 @@ function App() {
         <main className="main">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/escape" element={<HomePage />} />
-            <Route path="/escape/choose" element={<Choose />} />
-            <Route path="/escape/quest-item" element={<QuestPage />} />
-            <Route path="/escape/quests" element={<Quests />} />
-            <Route path="/escape/payment" element={<SuccessfulPayment />} />
+            <Route path="/escape-room-ts" element={<HomePage />} />
+            <Route path="/escape-room-ts/choose" element={<Choose />} />
+            <Route path="/escape-room-ts/quest-item" element={<QuestPage />} />
+            <Route path="/escape-room-ts/quests" element={<Quests />} />
+            <Route path="/escape-room-ts/payment" element={<SuccessfulPayment />} />
           </Routes>
         </main>
         <Footer />

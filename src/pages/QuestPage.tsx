@@ -18,8 +18,8 @@ export default function QuestPage() {
     return (
         <section className="info">
             <div className="info__container">
-                <Link className="info__button-all" to="/escape/quests">Все квесты</Link>
-                <img className="info__img" src={`../img/card-${img}@2x.jpg`} />
+                <Link className="info__button-all" to="/escape-room-ts/quests">Все квесты</Link>
+                <img className="info__img" src={`/img/card-${img}@2x.jpg`} />
                 <div className="info__main-item">
                     <p className="info__genre">
                         <span>{genre}</span>
@@ -39,7 +39,7 @@ export default function QuestPage() {
                     <div className="info__text">
                         <p>{text}</p>
                     </div>
-                    <Link className="info__button" to="/escape/choose" onClick={onHandleClick}>Забронировать</Link>
+                    <Link className="info__button" to="/escape-room-ts/choose" onClick={onHandleClick}>Забронировать</Link>
                 </div>
 
 

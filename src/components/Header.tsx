@@ -17,7 +17,7 @@ export default function Header() {
         <header className="main-header">
             <div className="main-header__container">
                 <div className="main-header__logo-menu">
-                    <Link className="main-header__logo" to="/escape" aria-label="Ссылка на главную страницу">
+                    <Link className="main-header__logo" to="/escape-room-ts" aria-label="Ссылка на главную страницу">
                         <SvgLogo />
                     </Link>
                     <button className={hidden ? "main-header__menu-button main-header__menu-button--closed" : "main-header__menu-button"} type="button" onClick={() => { setHidden(!hidden) }}>Меню</button>
@@ -25,7 +25,7 @@ export default function Header() {
                 <nav className={hidden ? "main-nav--closed" : "main-nav"}>
                     <ul className="main-nav__list main-nav__list--menu">
                         <li className="main-nav__item">
-                            <Link className="main-nav__link" to="escape/quests">Квесты</Link>
+                            <Link className="main-nav__link" to="escape-room-ts/quests">Квесты</Link>
                         </li>
 
                     </ul>

@@ -70,7 +70,7 @@ export default function Choose() {
                             <span>К оплате {chosenPrice} рублей.</span>
                         </div>
                     </div>
-                    <Link className="choose__info-pay" to='/escape/payment'>Перейти к оплате</Link>
+                    <Link className="choose__info-pay" to='/escape-room-ts/payment'>Перейти к оплате</Link>
                 </div> : ''}
             </div>
         </section>

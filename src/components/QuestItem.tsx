@@ -20,14 +20,14 @@ export default function QuestItem({ quest }: QuestProps): JSX.Element {
 
     return (
         <li className={hit ? "quest quest--hit" : "quest"}>
-            <Link to="/escape/quest-item" state={{ quest: quest }}>
+            <Link to="/escape-room-ts/quest-item" state={{ quest: quest }}>
                 <h4>{name}</h4>
                 <p>{address}</p>
                 <div className="quest__container">
                     <span className="quest__people">{people} чел</span>
                     <span className="quest__difficulty">{difficulty}</span>
                 </div>
-                <img className="quest__img" src={`../img/card-${img}@1x.jpg`} />
+                <img className="quest__img" src={`/img/card-${img}@1x.jpg`} />
             </Link>
         </li>
     )
