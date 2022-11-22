@@ -19,7 +19,7 @@ export default function QuestPage() {
         <section className="info">
             <div className="info__container">
                 <Link className="info__button-all" to="/escape-room-ts/quests">Все квесты</Link>
-                <img className="info__img" src={`/img/card-${img}@2x.jpg`} />
+                <img className="info__img" src={`./img/card-${img}@2x.jpg`} />
                 <div className="info__main-item">
                     <p className="info__genre">
                         <span>{genre}</span>
