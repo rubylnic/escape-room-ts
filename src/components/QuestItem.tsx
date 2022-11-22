@@ -27,7 +27,7 @@ export default function QuestItem({ quest }: QuestProps): JSX.Element {
                     <span className="quest__people">{people} чел</span>
                     <span className="quest__difficulty">{difficulty}</span>
                 </div>
-                <img className="quest__img" src={`/img/card-${img}@1x.jpg`} />
+                <img className="quest__img" src={`./img/card-${img}@1x.jpg`} />
             </Link>
         </li>
     )
