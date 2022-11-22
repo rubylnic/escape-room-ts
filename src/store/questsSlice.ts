@@ -4,7 +4,7 @@ import type { RootState } from './index'
 import axios from 'axios';
 import type { Filter } from './filtersSlice';
 
-const QUESTS_URL = 'http://localhost:7777/quests';
+const QUESTS_URL = 'quests.json';
 
 interface QuestsState {
     quests: Quest[],

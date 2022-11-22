@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Приключения",
+        "genre": "adventure"
+    },
+    {
+        "name": "Ужасы",
+        "genre": "horror"
+    },
+    {
+        "name": "Мистика",
+        "genre": "mystics"
+    },
+    {
+        "name": "Детектив",
+        "genre": "detective"
+    },
+    {
+        "name": "Sci-fi",
+        "genre": "scifi"
+    }
+]

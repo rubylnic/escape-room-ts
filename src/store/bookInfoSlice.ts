@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import type { RootState } from './index'
 import axios from 'axios';
 
-const BOOK_INFO_URL = 'http://localhost:7777/bookInfo';
+const BOOK_INFO_URL = 'bookInfo.json';
 
 interface BookInfoState {
     bookInfo: BookInfo[],

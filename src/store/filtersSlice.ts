@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import type { RootState } from './index'
 import axios from 'axios';
 
-const FILTERS_URL = 'http://localhost:7777/filters';
+const FILTERS_URL = 'filters.json';
 
 interface FiltersState {
     filters: Filter[],
