@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/escape-room-ts/static/css/main.27c8018e.css",
-    "main.js": "/escape-room-ts/static/js/main.e28435b1.js",
+    "main.css": "/escape-room-ts/static/css/main.8b503568.css",
+    "main.js": "/escape-room-ts/static/js/main.e0d8dded.js",
     "static/media/bg-d@2x.jpg": "/escape-room-ts/static/media/bg-d@2x.1df0a927f1e733700880.jpg",
     "static/media/ritual@2x.jpg": "/escape-room-ts/static/media/ritual@2x.570dd5cabc6bc2783a1a.jpg",
     "static/media/bg-d@1x.jpg": "/escape-room-ts/static/media/bg-d@1x.d29b83e3a10bcd2d3cde.jpg",
@@ -56,11 +56,11 @@
     "static/media/burger.svg": "/escape-room-ts/static/media/burger.eb179744f5302c09c4e5.svg",
     "static/media/arrow-right.svg": "/escape-room-ts/static/media/arrow-right.987c5129345bd46b779a.svg",
     "static/media/arrow-left.svg": "/escape-room-ts/static/media/arrow-left.842e2d9fc7cbf2c942b4.svg",
-    "main.27c8018e.css.map": "/escape-room-ts/static/css/main.27c8018e.css.map",
-    "main.e28435b1.js.map": "/escape-room-ts/static/js/main.e28435b1.js.map"
+    "main.8b503568.css.map": "/escape-room-ts/static/css/main.8b503568.css.map",
+    "main.e0d8dded.js.map": "/escape-room-ts/static/js/main.e0d8dded.js.map"
   },
   "entrypoints": [
-    "static/css/main.27c8018e.css",
-    "static/js/main.e28435b1.js"
+    "static/css/main.8b503568.css",
+    "static/js/main.e0d8dded.js"
   ]
 }
