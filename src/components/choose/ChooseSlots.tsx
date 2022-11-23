@@ -12,9 +12,13 @@ export default function ChooseSlots() {
     const bookInfoError = useAppSelector(selectBookInfoError);
     const dispatch = useAppDispatch();
 
+
     useEffect(() => {
-        dispatch(fetchBookInfo())
-    }, [])
+        if (bookInfoStatus === 'idle') {
+            dispatch(fetchBookInfo())
+        }
+
+    }, [bookInfoStatus])
 
     return (
         <AsyncContent status={bookInfoStatus} error={bookInfoError}>

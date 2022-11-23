@@ -265,8 +265,11 @@
   position: relative;
   padding-bottom: 5px;
   padding-right: 11px;
+  border: none;
   border-bottom: solid 2px $yellow;
   margin-bottom: 5px;
+  background: none;
+
 
   &::before {
     position: absolute;

@@ -55,12 +55,17 @@ export const questsSlice = createSlice({
         filterQuests: (state, action: PayloadAction<string>) => {
             const currentQuests: Quest[] = current(state.quests);
             const filterOption: string = action.payload;
-            const filtered = [...currentQuests.slice().filter((item: Filter) => {
-                if (item.genre === filterOption) {
-                    return item;
-                }
-            })]
-            state.filtered = filtered;
+            if (filterOption) {
+                const filtered = [...currentQuests.slice().filter((item: Filter) => {
+                    if (item.genre === filterOption) {
+                        return item;
+                    }
+                })]
+                state.filtered = filtered;
+            } else {
+                state.filtered = state.quests;
+            }
+
         },
         chooseQuests: (state, action: PayloadAction<Quest>) => {
             state.chosen = action.payload;

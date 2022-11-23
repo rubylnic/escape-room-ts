@@ -1,11 +1,11 @@
 
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import MyCalendar from '../components/Calendar';
 import { setBg } from '../store/bgSlice';
-import { date, time, price } from '../store/questInfoSlice';
+import { date, time, price, setTime } from '../store/questInfoSlice';
 import { useAppDispatch, useAppSelector } from '../store/hooks'
-import { selectChosenQuest } from '../store/questsSlice';
+import { filterQuests, selectChosenQuest } from '../store/questsSlice';
 import ChooseSlots from '../components/choose/ChooseSlots';
 
 export default function Choose() {
@@ -15,6 +15,7 @@ export default function Choose() {
     const chosenTime = useAppSelector(time);
     const chosenPrice = useAppSelector(price);
     const quest = useAppSelector(selectChosenQuest);
+    const navigate = useNavigate();
 
 
     useEffect(() => {
@@ -70,7 +71,11 @@ export default function Choose() {
                             <span>К оплате {chosenPrice} рублей.</span>
                         </div>
                     </div>
-                    <Link className="choose__info-pay" to='/escape-room-ts/payment'>Перейти к оплате</Link>
+                    <button className="choose__info-pay" onClick={() => {
+                        dispatch(setTime(''));
+                        dispatch(filterQuests(''))
+                        navigate('/escape-room-ts/payment')
+                    }}>Перейти к оплате</button>
                 </div> : ''}
             </div>
         </section>

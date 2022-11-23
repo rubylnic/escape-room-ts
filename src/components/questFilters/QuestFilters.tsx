@@ -13,8 +13,11 @@ export default function QuestFlters() {
     const [activeTab, setActiveTab] = useState<Filter>({ name: 'Приключения', genre: 'adventure' })
 
     useEffect(() => {
-        dispatch(fetchFilters())
-    }, [])
+        if (filtersStatus === 'idle') {
+            dispatch(fetchFilters())
+        }
+
+    }, [filtersStatus])
 
     return (
         <AsyncContent status={filtersStatus} error={filtersError}>
